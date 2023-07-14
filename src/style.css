@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@font-face {
+	font-family: "Satoshi";
+	src: url("Satoshi-Variable.ttf");
+}
+* {
+	/* color: #333; */
+	font-family: "Satoshi", sans-serif;
+	background: rgb(244 63 94);
+	scroll-snap-type: y proximity;
+	scroll-behavior: smooth;
+	/* text-wrap: balance; */
+	-webkit-overflow-scrolling: none;
+	@apply antialiased text-gray-700;
+}
+/* @media only screen and (max-width: 988px) {
+	section {
+		scroll-snap-align: start;
+		scroll-snap-stop: always;
+	}
+} */
+
+.bodytag {
+	@apply sm:px-2 sm:py-2.5 max-sm:border-t-4  sm:border-t-rose-500 max-sm:border-b-rose-500;
+}
+.bodytag2 {
+	@apply md:px-2 md:py-2.5 max-sm:border-t-4  md:border-t-rose-500 max-sm:border-b-rose-500 md:rounded-[4rem] md:m-4;
+	text-wrap: balance;
+}
+.bginherit * {
+	@apply bg-inherit;
+}
+.wavybg {
+	background-image: url("waves.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title {
+	@apply text-7xl xl:text-9xl pb-10 tracking-wider bg-inherit;
+}
+.para1 {
+	@apply max-w-[50ch] text-xl xl:text-4xl font-light leading-10 tracking-wide lg:tracking-wider bg-inherit;
+}
+.para2 {
+	@apply max-w-[50ch] text-2xl xl:text-4xl font-light leading-10 tracking-wide lg:tracking-wider bg-inherit;
+}
+.blueunderline {
+	@apply underline underline-offset-[10px] decoration-cyan-900;
+}
+
+.cards {
+	@apply rounded-3xl w-[80vw] md:w-[35rem] h-52 xl:h-60 bg-pink-900 flex flex-col justify-center items-center bg-inherit wavybg pl-4 lg:pl-0;
+}
+
+.insds {
+	margin-inline: auto;
+}
+.main-article {
+	@apply mt-8 prose prose-slate prose-h1:text-4xl mx-auto lg:prose-2xl lg:prose-h1:text-7xl selection:bg-[#AEC6CF] selection:text-cyan-900 prose-headings:font-robotomono prose-blockquote:border-slate-300 prose-headings:py-3 prose-h3:underline prose-headings:leading-9 prose-headings:font-bold;
+}
+.pre-article {
+	@apply min-h-screen py-8 flex flex-col justify-center relative overflow-hidden lg:py-12 px-5 lg:px-8;
+}

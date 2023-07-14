@@ -22,7 +22,7 @@
 
 ::before,
 ::after {
-  --tw-content: '';
+  --tw-content: "";
 }
 
 /*
@@ -42,9 +42,23 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -85,7 +99,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -129,7 +143,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -220,9 +235,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -269,7 +284,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -354,7 +369,8 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -422,7 +438,9 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -691,7 +709,7 @@ video {
 
 .gap-x-8 {
   -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
 }
 
 .gap-y-20 {
@@ -789,7 +807,7 @@ video {
 
 .bg-clip-text {
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
 }
 
 .p-2 {
@@ -964,7 +982,8 @@ video {
 }
 
 .transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1267,17 +1286,21 @@ video {
   color: var(--tw-prose-quotes);
   border-left-width: 0.25rem;
   border-left-color: var(--tw-prose-quote-borders);
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "\201C" "\201D" "\2018" "\2019";
   margin-top: 1.6em;
   margin-bottom: 1.6em;
   padding-left: 1em;
 }
 
-.main-article :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before {
+.main-article
+  :where(blockquote p:first-of-type):not(
+    :where([class~="not-prose"] *)
+  )::before {
   content: open-quote;
 }
 
-.main-article :where(blockquote p:last-of-type):not(:where([class~="not-prose"] *))::after {
+.main-article
+  :where(blockquote p:last-of-type):not(:where([class~="not-prose"] *))::after {
   content: close-quote;
 }
 
@@ -1544,23 +1567,28 @@ video {
   margin-bottom: 0.75em;
 }
 
-.main-article :where(.prose > ul > li > *:first-child):not(:where([class~="not-prose"] *)) {
+.main-article
+  :where(.prose > ul > li > *:first-child):not(:where([class~="not-prose"] *)) {
   margin-top: 1.25em;
 }
 
-.main-article :where(.prose > ul > li > *:last-child):not(:where([class~="not-prose"] *)) {
+.main-article
+  :where(.prose > ul > li > *:last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 1.25em;
 }
 
-.main-article :where(.prose > ol > li > *:first-child):not(:where([class~="not-prose"] *)) {
+.main-article
+  :where(.prose > ol > li > *:first-child):not(:where([class~="not-prose"] *)) {
   margin-top: 1.25em;
 }
 
-.main-article :where(.prose > ol > li > *:last-child):not(:where([class~="not-prose"] *)) {
+.main-article
+  :where(.prose > ol > li > *:last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 1.25em;
 }
 
-.main-article :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-prose"] *)) {
+.main-article
+  :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-prose"] *)) {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
@@ -1596,15 +1624,22 @@ video {
   padding-left: 0.5714286em;
 }
 
-.main-article :where(tbody td:first-child, tfoot td:first-child):not(:where([class~="not-prose"] *)) {
+.main-article
+  :where(tbody td:first-child, tfoot td:first-child):not(
+    :where([class~="not-prose"] *)
+  ) {
   padding-left: 0;
 }
 
-.main-article :where(tbody td:last-child, tfoot td:last-child):not(:where([class~="not-prose"] *)) {
+.main-article
+  :where(tbody td:last-child, tfoot td:last-child):not(
+    :where([class~="not-prose"] *)
+  ) {
   padding-right: 0;
 }
 
-.main-article :where(.prose > :first-child):not(:where([class~="not-prose"] *)) {
+.main-article
+  :where(.prose > :first-child):not(:where([class~="not-prose"] *)) {
   margin-top: 0;
 }
 
@@ -1776,28 +1811,42 @@ video {
     padding-left: 0.4166667em;
   }
 
-  .main-article :where(.lg\:prose-2xl > ul > li p):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(.lg\:prose-2xl > ul > li p):not(:where([class~="not-prose"] *)) {
     margin-top: 0.8333333em;
     margin-bottom: 0.8333333em;
   }
 
-  .main-article :where(.lg\:prose-2xl > ul > li > *:first-child):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(.lg\:prose-2xl > ul > li > *:first-child):not(
+      :where([class~="not-prose"] *)
+    ) {
     margin-top: 1.3333333em;
   }
 
-  .main-article :where(.lg\:prose-2xl > ul > li > *:last-child):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(.lg\:prose-2xl > ul > li > *:last-child):not(
+      :where([class~="not-prose"] *)
+    ) {
     margin-bottom: 1.3333333em;
   }
 
-  .main-article :where(.lg\:prose-2xl > ol > li > *:first-child):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(.lg\:prose-2xl > ol > li > *:first-child):not(
+      :where([class~="not-prose"] *)
+    ) {
     margin-top: 1.3333333em;
   }
 
-  .main-article :where(.lg\:prose-2xl > ol > li > *:last-child):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(.lg\:prose-2xl > ol > li > *:last-child):not(
+      :where([class~="not-prose"] *)
+    ) {
     margin-bottom: 1.3333333em;
   }
 
-  .main-article :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-prose"] *)) {
     margin-top: 0.6666667em;
     margin-bottom: 0.6666667em;
   }
@@ -1834,11 +1883,13 @@ video {
     padding-left: 0.6em;
   }
 
-  .main-article :where(thead th:first-child):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(thead th:first-child):not(:where([class~="not-prose"] *)) {
     padding-left: 0;
   }
 
-  .main-article :where(thead th:last-child):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(thead th:last-child):not(:where([class~="not-prose"] *)) {
     padding-right: 0;
   }
 
@@ -1849,19 +1900,27 @@ video {
     padding-left: 0.6em;
   }
 
-  .main-article :where(tbody td:first-child, tfoot td:first-child):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(tbody td:first-child, tfoot td:first-child):not(
+      :where([class~="not-prose"] *)
+    ) {
     padding-left: 0;
   }
 
-  .main-article :where(tbody td:last-child, tfoot td:last-child):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(tbody td:last-child, tfoot td:last-child):not(
+      :where([class~="not-prose"] *)
+    ) {
     padding-right: 0;
   }
 
-  .main-article :where(.lg\:prose-2xl > :first-child):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(.lg\:prose-2xl > :first-child):not(:where([class~="not-prose"] *)) {
     margin-top: 0;
   }
 
-  .main-article :where(.lg\:prose-2xl > :last-child):not(:where([class~="not-prose"] *)) {
+  .main-article
+    :where(.lg\:prose-2xl > :last-child):not(:where([class~="not-prose"] *)) {
     margin-bottom: 0;
   }
 }
@@ -1894,10 +1953,13 @@ video {
   color: rgb(22 78 99 / var(--tw-text-opacity));
 }
 
-.main-article :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"] *))) {
+.main-article
+  :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"] *))) {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  font-family: JetBrains Mono, monospace;
+  font-family:
+    JetBrains Mono,
+    monospace;
   font-weight: 700;
   line-height: 2.25rem;
 }

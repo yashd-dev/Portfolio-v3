@@ -1,155 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../style.css" />
-		<link rel="stylesheet" href="../tailwind.css" />
-		<title>Yash D's Blogs</title>
-	</head>
-	<body>
-		<div class="pre-article bg-[#e5e6e1] bodytag2 bginherit">
-			<div class="main-article">
-				<div class="pb-10 md:pb-24">
-					<header
-						class="flex items-end justify-between bg-inherit py-2.5 pr-6 max-w-screen-lg bg-clip-content"
-					>
-						<a
-							href="/"
-							class="w-max font-normal text-xl md:text-4xl text-gray-800 hover:text-rose-500 transition-colors flex items-center gap-x-8 bg-inherit"
-						>
-							<span class="bg-inherit">Yash D</span>
-						</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../tailwind.css" />
+    <title>Yash D's Blogs</title>
+  </head>
+  <body>
+    <div class="pre-article bodytag2 bginherit bg-[#e5e6e1]">
+      <div class="main-article">
+        <div class="pb-10 md:pb-24">
+          <header
+            class="flex max-w-screen-lg items-end justify-between bg-inherit bg-clip-content py-2.5 pr-6"
+          >
+            <a
+              href="/"
+              class="flex w-max items-center gap-x-8 bg-inherit text-xl font-normal text-gray-800 transition-colors hover:text-rose-500 md:text-4xl"
+            >
+              <span class="bg-inherit">Yash D</span>
+            </a>
 
-						<div class="space-x-9 bg-inherit">
-							<a
-								href="/about"
-								class="w-max font-normal text-xl md:text-4xl hover:text-rose-500 transition-colors underline decoration-gray-300 bg-inherit"
-								>About</a
-							><a
-								href="/posts"
-								class="w-max font-normal text-xl md:text-4xl hover:text-rose-500 transition-colors bg-inherit"
-								>Blogs</a
-							>
-						</div>
-					</header>
-					<div
-						class="w-full border-b border-gray-600 md:border-0"
-					></div>
-				</div>
-				<h1 class="md:underline underline-offset-8 mt-20">
-					Making of Rock Paper Scissors Using OpenCV and Mediapipe
-				</h1>
-				<figure>
-					<img
-						src="../images/RPS Screenshot.png"
-						alt=""
-						class="w-screen rounded-2xl min-h-fit"
-					/>
-					<figcaption>Game Screenshot</figcaption>
-				</figure>
-				<div class="w-full border-b border-gray-600"></div>
-				<h2>Why Make it?</h2>
-				<p>
-					I made this game simply for the purpose of learning about
-					OpenCV and as my semester end Python project. The game is
-					simple and straight forward and the codebase is also the
-					same. It sure was a headache to make, especially
-					implementing MediaPipe because Google's documentation was a
-					bit difficult for me to understand and other tutorials out
-					there were not aligning with my vision for this project.
-				</p>
-				<p>
-					<a href="https://github.com/yashd-dev/RPS-using-OpenCv"
-						>Here is the codebase for my project.</a
-					>
-					I have documented each and everything as comments in the
-					Jupyter Notebook itself. If I have missed out on something,
-					you could open an issue or pull-request on Github or email
-					me about it.
-				</p>
-				<h2>Working of The Game</h2>
-				<p>
-					Unless you live under a rock, you must know about the simple
-					game of
-					<span class="italic">Rock Paper Scissors.</span>
-				</p>
-				<blockquote>
-					<p>
-						For the uninitiated,
-						<a href="https://www.pgpedia.com/r/rock-paper-scissors">
-							click here to know more about the game</a
-						>
-					</p>
-				</blockquote>
-				<p>
-					My implementation of this game is in Python which uses
-					OpenCV
-					<span class="italic"
-						>, a real-time computer vision library,
-					</span>
-					to capture the player's hand gestures through a webcam and
-					applies MediaPipe
-					<span class="italic">, a library of AI/ML models </span> on
-					the captured data to recognize the hand and its movements.
-					The system then classifies the hand gesture as either rock,
-					paper, or scissors using hand landmarks and their
-					coordinates. The PC's move is randomly generated
-				</p>
-				<p>
-					Thats a loads of stuff in one paragraph, ill quickly break
-					it down for you :)
-				</p>
-				<h3>What OpenCV Does:</h3>
-				<figure class="flex flex-col md:flex-row gap-10">
-					<img
-						src="../images/matrix .png"
-						alt=""
-						class="w-screen md:w-auto rounded-2xl md:h-52"
-					/>
-					<img
-						src="../images/rgb.png"
-						alt=""
-						class="w-1/2 md:w-auto rounded-lg md:h-52"
-					/>
-				</figure>
+            <div class="space-x-9 bg-inherit">
+              <a
+                href="/about"
+                class="w-max bg-inherit text-xl font-normal underline decoration-gray-300 transition-colors hover:text-rose-500 md:text-4xl"
+                >About</a
+              ><a
+                href="/posts"
+                class="w-max bg-inherit text-xl font-normal transition-colors hover:text-rose-500 md:text-4xl"
+                >Blogs</a
+              >
+            </div>
+          </header>
+          <div class="w-full border-b border-gray-600 md:border-0"></div>
+        </div>
+        <h1 class="mt-20 underline-offset-8 md:underline">
+          Making of Rock Paper Scissors Using OpenCV and Mediapipe
+        </h1>
+        <figure>
+          <img
+            src="../images/RPS Screenshot.png"
+            alt=""
+            class="min-h-fit w-screen rounded-2xl"
+          />
+          <figcaption>Game Screenshot</figcaption>
+        </figure>
+        <div class="w-full border-b border-gray-600"></div>
+        <h2>Why Make it?</h2>
+        <p>
+          I made this game simply for the purpose of learning about OpenCV and
+          as my semester end Python project. The game is simple and straight
+          forward and the codebase is also the same. It sure was a headache to
+          make, especially implementing MediaPipe because Google's documentation
+          was a bit difficult for me to understand and other tutorials out there
+          were not aligning with my vision for this project.
+        </p>
+        <p>
+          <a href="https://github.com/yashd-dev/RPS-using-OpenCv"
+            >Here is the codebase for my project.</a
+          >
+          I have documented each and everything as comments in the Jupyter
+          Notebook itself. If I have missed out on something, you could open an
+          issue or pull-request on Github or email me about it.
+        </p>
+        <h2>Working of The Game</h2>
+        <p>
+          Unless you live under a rock, you must know about the simple game of
+          <span class="italic">Rock Paper Scissors.</span>
+        </p>
+        <blockquote>
+          <p>
+            For the uninitiated,
+            <a href="https://www.pgpedia.com/r/rock-paper-scissors">
+              click here to know more about the game</a
+            >
+          </p>
+        </blockquote>
+        <p>
+          My implementation of this game is in Python which uses OpenCV
+          <span class="italic">, a real-time computer vision library, </span>
+          to capture the player's hand gestures through a webcam and applies
+          MediaPipe
+          <span class="italic">, a library of AI/ML models </span> on the
+          captured data to recognize the hand and its movements. The system then
+          classifies the hand gesture as either rock, paper, or scissors using
+          hand landmarks and their coordinates. The PC's move is randomly
+          generated
+        </p>
+        <p>
+          Thats a loads of stuff in one paragraph, ill quickly break it down for
+          you :)
+        </p>
+        <h3>What OpenCV Does:</h3>
+        <figure class="flex flex-col gap-10 md:flex-row">
+          <img
+            src="../images/matrix .png"
+            alt=""
+            class="w-screen rounded-2xl md:h-52 md:w-auto"
+          />
+          <img
+            src="../images/rgb.png"
+            alt=""
+            class="w-1/2 rounded-lg md:h-52 md:w-auto"
+          />
+        </figure>
 
-				<p>
-					OpenCV reads from the webcam and stores each frame as a
-					matrix of BRG (Blue, Red, Green) values of each pixel of the
-					image. BRG is essentially RGB (Red, Green, Blue) values but
-					reversed. OpenCV reads in images in BGR format instead of
-					RGB because when OpenCV was first being developed, BGR color
-					format was popular among camera manufacturers and image
-					software providers. The red channel was considered one of
-					the least important color channels so was listed last.
-					However, now the standard has changed and most image
-					software and cameras use RGB format,due to better image
-					quality.
-				</p>
-				<h3>What MediaPipe Does</h3>
-				<p>
-					Mediapipe is basically a pre-made AI/ML solutions/modals
-					which Google has made available to the general public for
-					free.It provides a variety of pre-built, customizable
-					solutions for various use cases like object tracking, audio
-					classification.I used the Hand Gesture Recognition Solution
-					which uses the hand landmark model. The hand landmark model
-					bundle detects the key-point localization of 21 hand-knuckle
-					coordinates within the detected hand regions. The model was
-					trained on approximately 30K real-world images, as well as
-					several rendered synthetic hand models imposed over various
-					backgrounds.
-				</p>
-				<figure>
-					<img
-						src="../images/hand-landmarks.png"
-						alt=""
-						class="w-screen rounded-2xl min-h-fit"
-					/>
-					<figcaption>The Hand landmark Model</figcaption>
-				</figure>
-			</div>
-		</div>
-	</body>
+        <p>
+          OpenCV reads from the webcam and stores each frame as a matrix of BRG
+          (Blue, Red, Green) values of each pixel of the image. BRG is
+          essentially RGB (Red, Green, Blue) values but reversed. OpenCV reads
+          in images in BGR format instead of RGB because when OpenCV was first
+          being developed, BGR color format was popular among camera
+          manufacturers and image software providers. The red channel was
+          considered one of the least important color channels so was listed
+          last. However, now the standard has changed and most image software
+          and cameras use RGB format,due to better image quality.
+        </p>
+        <h3>What MediaPipe Does</h3>
+        <p>
+          Mediapipe is basically a pre-made AI/ML solutions/modals which Google
+          has made available to the general public for free.It provides a
+          variety of pre-built, customizable solutions for various use cases
+          like object tracking, audio classification.I used the Hand Gesture
+          Recognition Solution which uses the hand landmark model. The hand
+          landmark model bundle detects the key-point localization of 21
+          hand-knuckle coordinates within the detected hand regions. The model
+          was trained on approximately 30K real-world images, as well as several
+          rendered synthetic hand models imposed over various backgrounds.
+        </p>
+        <figure>
+          <img
+            src="../images/hand-landmarks.png"
+            alt=""
+            class="min-h-fit w-screen rounded-2xl"
+          />
+          <figcaption>The Hand landmark Model</figcaption>
+        </figure>
+      </div>
+    </div>
+  </body>
 </html>
